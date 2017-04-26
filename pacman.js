@@ -37,8 +37,24 @@ var clyde = {
   edible: false
 };
 
-var ghosts = (inky, blinky, pinky, clyde)
+var ghosts = [inky, blinky, pinky, clyde];
 
+function eatGhost(ghost) {
+  if (ghost.edible) {
+    console.log('\nYou ate ' + ghost.name + 'who is the ' + ghost.character + ' ghost!');
+  } else {
+    console.log('\nYou were killed by ' + ghost.name + ' the ' + ghost.colour + ' ghost');
+    lives -= 1
+    displayStats()
+    checkLives()
+  }
+}
+
+function checkLives(){
+  if (lives <=0) {
+    process.exit();
+  }
+}
 
 // Draw the screen functionality
 function drawScreen() {
