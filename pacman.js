@@ -86,20 +86,20 @@ function displayMenu() {
     }
     else {
       console.log('(1) Eat Inky (inedible)');
-    }
-  if (inky.edible) {
+  }
+  if (blinky.edible) {
     console.log('(2) Eat Blinky (edible)');
           }
       else {
         console.log('(2) Eat Blinky (inedible)');
           }
-  if (inky.edible) {
+  if (pinky.edible) {
     console.log('(3) Eat Pinky (edible)');
           }
       else {
         console.log('(3) Eat Pinky (inedible)');
       }
-  if (inky.edible) {
+  if (clyde.edible) {
     console.log('(4) Eat Clyde (edible)');
       }
         else {
